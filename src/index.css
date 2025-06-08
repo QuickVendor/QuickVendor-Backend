@@ -1,26 +1,44 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Custom components and utilities */
-@layer components {
-  .btn {
-    @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 ease-in-out;
-  }
-  
-  .btn-primary {
-    @apply bg-primary text-white hover:bg-primary-700 focus:ring-4 focus:ring-primary-200;
-  }
-  
-  .btn-secondary {
-    @apply bg-secondary text-white hover:bg-secondary-700 focus:ring-4 focus:ring-secondary-200;
-  }
-  
-  .card {
-    @apply bg-white rounded-xl shadow-lg p-6 border border-secondary-100;
-  }
-  
-  .container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
-  }
+/* Custom components */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  background-color: #64748b;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #475569;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
